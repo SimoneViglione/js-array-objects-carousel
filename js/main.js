@@ -65,4 +65,34 @@ prev.addEventListener("click", function() {
 );
 
 
+//Bottoni Bonus 
 
+function autoPlay() {
+    imageContainerArray[currentImage].classList.remove("d-block");
+    currentImage = (currentImage + 1) % images.length;
+    imageContainerArray[currentImage].classList.add("d-block");
+}
+
+const auto = document.querySelector("#auto");
+
+auto.addEventListener("click", function() {
+    setInterval(autoPlay, 3000);
+});
+
+function autoPlayReverse() {
+    imageContainerArray[currentImage].classList.remove("d-block");
+    currentImage = (currentImage - 1 + images.length) % images.length;
+    imageContainerArray[currentImage].classList.add("d-block");
+}
+
+const autoReverse = document.querySelector("#auto_reverse");
+
+autoReverse.addEventListener("click", function() {
+    setInterval(autoPlayReverse, 3000);
+});
+
+
+
+
+
+  
