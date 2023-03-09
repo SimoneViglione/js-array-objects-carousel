@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Odibee Sans', cursive;
 }
 
 body {
@@ -72,9 +73,12 @@ body {
     display: block;
 }
 
-p {
-    color: white;
-    padding: 1rem 0 0 1rem;
+.image_text {
+    position: absolute;
+    top: 87%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
 }
 
 /********************************************/

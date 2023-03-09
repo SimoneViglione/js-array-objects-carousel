@@ -30,6 +30,10 @@ for (let i = 0; i < images.length; i++) {
 
     `<div class="image_container">
         <img class="image" src="${images[i].image}"/>
+        <div class="image_text">
+            <h3>${images[i].title}</h3>
+            <p>${images[i].text}</p>
+        </div>
     </div>`;
 
     slider.innerHTML += imageContainer;
